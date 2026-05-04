@@ -169,7 +169,7 @@ def compute_openseespy_spectrum(time, ag_cm):
         
         try:
             # Reset model
-            ops.wipeAll()
+            ops.wipe()
             ops.model('basic', '-ndm', 1, '-ndf', 1)
             
             # Nodes: 0 = base (fixed), 1 = mass
@@ -187,11 +187,11 @@ def compute_openseespy_spectrum(time, ag_cm):
             
             # Spring element
             ops.uniaxialMaterial('Elastic', 1, k)
-            ops.element('truss', 1, 0, 1, 1.0, 1)
+            ops.element('zeroLength', 1, 0, 1, '-mat', 1, '-dir', 1)
             
             # Damping: Rayleigh with single mode
             alpha = 2.0 * XI_TARGET * omega
-            ops.rayleigh(alpha, 0.0)
+            ops.rayleigh(alpha, 0.0, 0.0, 0.0)
             
             # Analysis setup
             ops.constraints('Plain')
@@ -275,7 +275,7 @@ def compute_openseespy_spectrum(time, ag_cm):
             print("✓")
             
         except Exception as e:
-            print(f"✗ {str(e)[:40]}")
+            print(f"✗ {type(e).__name__}: {e}")
     
     results_df = pd.DataFrame(results)
     return results_df
@@ -406,6 +406,10 @@ def main():
     
     # Step 3: Save results
     print("\nStep 3: Saving results...")
+    if opensees_df.empty:
+        print("✗ No valid OpenSeesPy results were generated; CSV will not be saved.")
+        return
+    
     opensees_csv = RESULTS_DIR / "openseespy_verification_5percent.csv"
     opensees_df.to_csv(opensees_csv, index=False, float_format="%.6f")
     print(f"✓ Saved: {opensees_csv}")

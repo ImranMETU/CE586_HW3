@@ -102,6 +102,8 @@ INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\reru
 INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
+INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
 INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\CE586_HW3_Q1_Report.aux
@@ -233,6 +235,7 @@ INPUT .\results_q2\Q2d_inelastic_R8_comparison.png
 INPUT .\results_q2\Q2d_inelastic_R8_comparison.png
 INPUT .\results_q2\Q2d_inelastic_R8_comparison.png
 INPUT .\results_q2\Q2d_inelastic_R8_comparison.png
+INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt8.tfm
 INPUT CE586_HW3_Q1_Report.aux
 INPUT .\CE586_HW3_Q1_Report.out
 INPUT .\CE586_HW3_Q1_Report.out
@@ -264,3 +267,5 @@ INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb
+INPUT C:\Users\Imran\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb
